@@ -9,7 +9,9 @@ The number of uncompleted jobs is summed up on the header, a number that decreas
 Cards can be deleted on individual delete button or by deleting only complete task using button on top right of the main 
 section.
 
+Alpha Server with 4 undone jobs:
 ![alt text](https://github.com/anthony-ndegwa-dev/ServerAdmin/blob/main/img/ServerAdmin1.png)
 
 
+Alpha Server with 2 remaining jobs:
 ![alt text](https://github.com/anthony-ndegwa-dev/ServerAdmin/blob/main/img/ServerAdmin2.png)
