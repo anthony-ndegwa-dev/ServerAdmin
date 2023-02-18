@@ -9,3 +9,6 @@ The number of uncompleted jobs is summed up on the header, a number that decreas
 Cards can be deleted on individual delete button or by deleting only complete task using button on top right of the main 
 section.
 
+![alt text](http://url/to/img.png)
+
+![alt text](http://url/to/img.png)
