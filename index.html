@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script defer src="js/app.js"></script>
+	<title>ServerAdmin</title>
+</head>
+
+<body class="app">
+	<div class="all-tasks sidebar">
+		<header class="header">
+			<h1 class="task-list-title header-title">Servers</h1>
+			<form class="sidebar-form" data-new-category-form data-new-list-form>
+				<div class="form-control">
+					<input type="text" class="new list" data-new-list-input placeholder="Add Server" aria-label="new list name">
+				</div>
+				<button class="btn create fa fa-plust" style="background: linear-gradient(#fff, #013, #013, #013); padding: 7px 20px; border: 1px solid #fff;" aria-hidden="true"> Save	</button>
+				<button class="btn delete" style="background: linear-gradient(#fff, #f44, #f44, #f44); color: #000; padding: 7px 10px; margin: 5px 0; border: 1px solid #fff;" data-delete-list-button> Delete</button>
+			</form>
+		</header>
+			<ul class="sidebar-list" data-lists>
+				<li class="sidebar-item"></li>
+			</ul>
+		</div>
+				
+	<main class="main">
+		<header class="header">
+			<div class="todo-list" data-list-display-container>
+				<div class="todo-header">
+					<h1 class="header-title" data-list-title></h1>
+					<div class="currently-viewing" data-currently-viewing></div>
+					<p class="task-count currently-viewing" data-list-count></p> 
+				</div>
+			</div>
+
+			<div class="new-task-creator">
+				<form class="create-todo-form" data-new-task-form>
+					<input type="text" data-new-task-input class="new task" placeholder="New Job" aria-label="new task name" />
+					<button class="btn create">Save</button>
+				</form>
+			</div>
+
+			<div class="delete-stuff">
+				<button class="btn delete" style="background: linear-gradient(#fff, #f44, #f44, #f44); color:#000; border: 1px solid #fff;" data-clear-complete-tasks-button>Delete complete jobs</button>
+		</header>
+
+		<div class="todo-body">
+			<div class="tasks todos-container" data-cards data-tasks></div>
+		</div>
+
+	</main>
+	
+
+	<template id="task-template">
+		<div class="task todo" id="nightmode">
+			<div class="todo-tag header-title" data-task-title>
+				<input type="checkbox" class="checkbox" />
+				<p class="blink" aria-label="Favorite"></p>
+			</div>
+			
+			<label>
+				<!-- <span class="custom-checkbox"></span> -->
+			</label>
+			
+			<p class="todo-description todo-actions"></p>
+			
+			<!-- <div class="todo-actions"> -->
+				<!-- <i class="far fa-edit"></i> -->
+				<div class="deleteBtn-tag header-title" data-list-title></div>
+				<button class="" style="color: #f00;" onclick="remove(this)" id="data-delete-task" data-remove-task>Delete</button>
+			<!-- </div> -->
+		</div>
+	</template>
+</body>
+
+</html>
